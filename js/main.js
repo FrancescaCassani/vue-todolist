@@ -8,7 +8,8 @@ const batman = new Vue({
       {text: "Kill Bane"},
       {text: "Kill the Penguin"},
       {text: "Seduce Catwoman"}
-    ]
+    ],
+    imgLink: "./img/clipart18626.png"
   },
   methods: {
     add() {
@@ -19,6 +20,6 @@ const batman = new Vue({
     },
     remove(i) {
       this.todos.splice(i, 1) //numero di elementi che voglio eliminare
-    }
+    },
   }
 });

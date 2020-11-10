@@ -8,7 +8,7 @@ const batman = new Vue({
       {text: "Kill Bane"},
       {text: "Kill the Penguin"},
       {text: "Seduce Catwoman"}
-    ],
+    ]
   },
   methods: {
     add() {
@@ -17,5 +17,8 @@ const batman = new Vue({
       }),
       this.newTodos= ''
     },
+    hide(i) {
+      this.todos.splice(i,1) //numero di elementi che voglio eliminare
+    }
   }
 });

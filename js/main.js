@@ -4,10 +4,11 @@ const batman = new Vue({
   data: {
     newTodos: "",
     todos: [
-      {text: "Kill the Penguin"},
+      {text: "Seduce Catwoman"},
       {text: "Kill Bane"},
+      {text: "Wash the Batmobile"},
       {text: "Kill the Penguin"},
-      {text: "Seduce Catwoman"}
+      {text: "Kill the Joker"}
     ],
     imgLink: "./img/clipart18626.png"
   },

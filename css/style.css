@@ -61,7 +61,7 @@
     border: 0;
     border-radius: 25px;
     background: #000;
-    color: yellow;
+    color: #ffd530;
     transition: background .4s;
 }
 
@@ -79,7 +79,7 @@
     flex-basis: 25%;
     background: #000;
     padding-right: 10px;
-    color: yellow;
+    color:  #ffd530;
     font-size: 20px;
     text-align: center;
     padding-top: 4px;
@@ -93,7 +93,7 @@
     right: 30px;
     top: 8px;
     background: #000;
-    color: yellow;
+    color:  #ffd530;
     font-size: 15px;
 }
 
@@ -108,7 +108,7 @@
     justify-content: space-between;
     margin-bottom: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid yellow;
+    border-bottom: 1px solid  #ffd530;
 }
 
 .content .list li span {
@@ -116,7 +116,7 @@
 }
 
 .content .list li:hover {
-    color: yellow;
+    color:  #ffd530;
     cursor: grabbing;
 }
 
@@ -127,7 +127,7 @@
     width: 450px;
     height: 150px;
     background: #000;
-    color: yellow;
+    color:  #ffd530;
 }
 
 .hidden h1 {

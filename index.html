@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <div id="root">
+    <div id="batman">
 
         <!-- Wrapper -->
         <header class="slider-wrapper">
@@ -39,26 +39,10 @@
 
             <section class="list"> 
                 <ul class="todos">
-                    <li>
-                        <span>Kill the Joker</span>
+                    <li  v-for="item in todos">
+                        <span> {{ item }} </span>
                         <i class="fas fa-bolt"></i>
                     </li>
-
-                    <li>
-                        <span>Kill Bane</span>
-                        <i class="fas fa-bolt"></i>
-                    </li>
-
-                    <li>
-                        <span>Kill the Penguin</span>
-                        <i class="fas fa-bolt"></i>
-                    </li>
-
-                    <li>
-                        <span>Seduce Catwoman</span>
-                        <i class="fas fa-bolt"></i>
-                    </li>
-
                 </ul>
 
             </section>

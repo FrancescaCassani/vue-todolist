@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Bangers', cursive;
+    background: #cecece;
 }
 
 #root {
@@ -42,25 +43,62 @@
 
 
 /* NEW TODO */
-.content {
+/* Info */
+.content .info{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 .add-todo {
-    width: 65%;
+    width: 70%;
     height: 25px;
-}
-
-.btn {
-    width: 60px;
-    height: 25px;
+    flex-basis: 70%;
+    outline: none;
     background: #000;
     color: yellow;
 }
 
-.todos {
+.btn {
+    width: 80px;
+    height: 25px;
+    flex-basis: 25%;
+    background: #000;
+    color: yellow;
+    text-align: center;
+    padding-top: 4px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background .4s;
+}
+
+.btn i {
+    background: #000;
+    color: yellow;
+    transform: translateX(10px);
+}
+
+.btn:hover {
+    background: rgba(0, 0, 0, .7);
+}
+
+
+/* List */
+.content .list  li {
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid yellow;
+}
+
+.content .list  li i:hover {
+    color: yellow;
+    cursor: grabbing;
+}
+
+.content .list li span.completed {
+    text-decoration: line-through;
 }
 
 

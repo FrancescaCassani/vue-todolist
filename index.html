@@ -25,7 +25,9 @@
     
         </header>
 
-        <main class="content">
+        <main class="content"
+        @keyup.enter="add()">
+            
             <section class="info">
 
                 <input type="text"
@@ -48,7 +50,7 @@
                         <span> {{ i + 1 }}: {{ item.text }} </span>
                         <div class="delete-btn">
                             <i class="fas fa-bolt"
-                            @click="hide(i)"></i>
+                            @click="remove(i)"></i>
                         </div>
 
                     </li>

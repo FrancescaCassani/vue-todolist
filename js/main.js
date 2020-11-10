@@ -17,8 +17,8 @@ const batman = new Vue({
       }),
       this.newTodos= ''
     },
-    hide(i) {
-      this.todos.splice(i,1) //numero di elementi che voglio eliminare
+    remove(i) {
+      this.todos.splice(i, 1) //numero di elementi che voglio eliminare
     }
   }
 });

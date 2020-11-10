@@ -104,6 +104,21 @@
     text-decoration: line-through;
 }
 
+.hidden{
+    display: flex;
+    font-size: 40px;
+    padding: 25px 30px;
+    width: 450px;
+    height: 150px;
+    background: #000;
+    color: yellow;
+}
+
+.hidden h1 {
+    text-align: center;
+    padding-top: 20px;
+    background: #000;
+}
 
 
 

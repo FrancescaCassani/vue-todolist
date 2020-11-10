@@ -2,11 +2,20 @@
 const batman = new Vue({
   el: "#batman",
   data: {
+    newTodos: "",
     todos: [
-      "Kill the Penguin",
-      "Kill Bane",
-      "Kill the Penguin",
-      "Seduce Catwoman"
-    ]
+      {text: "Kill the Penguin"},
+      {text: "Kill Bane"},
+      {text: "Kill the Penguin"},
+      {text: "Seduce Catwoman"}
+    ],
+  },
+  methods: {
+    add() {
+      this.todos.push({
+        text: this.newTodos,
+      }),
+      this.newTodos= ''
+    },
   }
 });

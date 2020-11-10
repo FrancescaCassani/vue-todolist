@@ -53,8 +53,11 @@
 .add-todo {
     width: 70%;
     height: 25px;
+    padding-left: 15px;
     flex-basis: 70%;
     outline: none;
+    border: 0;
+    border-radius: 25px;
     background: #000;
     color: yellow;
 }
@@ -100,5 +103,9 @@
 .content .list li span.completed {
     text-decoration: line-through;
 }
+
+
+/* SHOW/HIDE */
+
 
 

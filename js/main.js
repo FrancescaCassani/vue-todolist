@@ -34,6 +34,6 @@ const batman = new Vue({
     },
     removeAll() {
       this.todos = [];
-    }
+    },
   }
 });

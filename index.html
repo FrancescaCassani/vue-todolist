@@ -25,12 +25,16 @@
     
         </header>
 
+
+        <!-- Main content -->
         <main class="content">
             
             <section 
             class="info"
             @keyup.enter="add">
 
+
+                <!-- New todo -->
                 <input 
                 type="text"
                 class="add-todo"
@@ -38,12 +42,14 @@
                 v-model.trim= "newTodos"
                 >
 
+                <!-- BTN add todo -->
                 <div 
                 class="btn"
                 @click="add">Add 
                     <i class="fas fa-bolt"></i>
                 </div>
 
+                <!-- BTN remove all todo -->
                 <div 
                 class="btn-removeall"
                 @click="removeAll">Remove all 
@@ -52,7 +58,8 @@
 
             </section>
             
-
+ 
+            <!-- List todo -->
             <section class="list"> 
 
                 <ul 
@@ -73,7 +80,6 @@
                         <div 
                         class="delete-btn">
 
-
                             <i 
                             class="fas fa-mask"
                             :class="todos[i].done" 
@@ -84,7 +90,6 @@
                             class="fas fa-bolt"
                             @click="remove(i)"></i>
                         </div>
-
                     </li>
                 </ul>
 
@@ -94,9 +99,7 @@
                     <h1>Best Batman Ever</h1>
                 </div>
                 
-
             </section>
-
         </main>
     </div>
 

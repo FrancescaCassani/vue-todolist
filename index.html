@@ -26,18 +26,23 @@
         </header>
 
         <main class="content"
-        @keyup.enter="add()">
+        @keyup.enter="add">
             
             <section class="info">
 
                 <input type="text"
                 class="add-todo"
                 placeholder="Add new todo"
-                v-model= "newTodos"
+                v-model.trim= "newTodos"
                 >
 
                 <div class="btn"
-                @click="add()">Add 
+                @click="add">Add 
+                    <i class="fas fa-bolt"></i>
+                </div>
+
+                <div class="btn-removeall"
+                @click="removeAll">Remove all 
                     <i class="fas fa-bolt"></i>
                 </div>
 

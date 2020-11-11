@@ -55,7 +55,7 @@
     width: 70%;
     height: 30px;
     padding-left: 15px;
-    flex-basis: 70%;
+    flex-basis: 55%;
     font-size: 20px;
     outline: none;
     border: 0;
@@ -74,9 +74,9 @@
 /* Bottone ADD */
 .btn {
     position: relative;
-    width: 80px;
+    width: 60px;
     height: 30px;
-    flex-basis: 25%;
+    flex-basis: 15%;
     background: #000;
     padding-right: 10px;
     color:  #ffd530;
@@ -90,7 +90,7 @@
 
 .btn i {
     position: absolute;
-    right: 30px;
+    right: 11px;
     top: 8px;
     background: #000;
     color:  #ffd530;
@@ -100,6 +100,35 @@
 .btn:hover {
     background: rgba(0, 0, 0, .7);
 }
+
+.btn-removeall {
+    position: relative;
+    width: 70px;
+    height: 30px;
+    flex-basis: 25%;
+    background: #000;
+    padding-right: 10px;
+    color:  #ffd530;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 4px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background .4s;
+}
+
+.btn-removeall i {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    background: #000;
+    color:  #ffd530;
+    font-size: 15px;
+}
+
+
+
+
 
 
 /* List */

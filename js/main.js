@@ -13,14 +13,19 @@ const batman = new Vue({
     imgLink: "./img/clipart18626.png"
   },
   methods: {
-    add() {
-      this.todos.push({
-        text: this.newTodos,
-      }),
-      this.newTodos= ''
+    add() { 
+      if (this.newTodos !== "") {
+        this.todos.push({
+          text: this.newTodos
+        });
+        this.newTodos= '' //per lasciare lo spazio vuoto appena aggiungi un todo
+      }
     },
     remove(i) {
       this.todos.splice(i, 1) //numero di elementi che voglio eliminare
     },
+    removeAll() {
+      this.todos = [];
+    }
   }
 });

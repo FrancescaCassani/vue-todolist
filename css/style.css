@@ -97,7 +97,8 @@
     font-size: 15px;
 }
 
-.btn:hover {
+.btn:hover,
+.btn-removeall:hover {
     background: rgba(0, 0, 0, .7);
 }
 
@@ -127,10 +128,6 @@
 }
 
 
-
-
-
-
 /* List */
 .content .list li {
     display: flex;
@@ -140,13 +137,24 @@
     border-bottom: 1px solid  #ffd530;
 }
 
+
 .content .list li span {
     font-size: 20px;
 }
 
-.content .list li:hover {
+.content .list li i:hover,
+.content .list li span:hover {
     color:  #ffd530;
     cursor: grabbing;
+}
+
+ul .delete-btn i:first-child {
+    padding-right: 20px;
+}
+
+ul .delete-btn i:first-child:hover {
+    color: blue;
+
 }
 
 .hidden{
@@ -164,6 +172,13 @@
     padding-top: 20px;
     background: #000;
 }
+
+.list li.disabled {
+    text-decoration: line-through;
+  }
+
+
+
 
 
 

@@ -4,11 +4,11 @@ const batman = new Vue({
   data: {
     newTodos: "",
     todos: [
-      {text: "Seduce Catwoman", status: null},
-      {text: "Kill Bane", status: null},
-      {text: "Wash the Batmobile", status: null},
-      {text: "Kill the Penguin", status: null},
-      {text: "Kill the Joker", status: null}
+      {text: "Seduce Catwoman", done: null},
+      {text: "Kill Bane", done: null},
+      {text: "Wash the Batmobile", done: null},
+      {text: "Kill the Penguin", done: null},
+      {text: "Kill the Joker", done: null},
     ],
     imgLink: "./img/clipart18626.png"
   },
@@ -16,13 +16,18 @@ const batman = new Vue({
     add() { 
       if (this.newTodos !== "") {
         this.todos.push({
-          text: this.newTodos
+          text: this.newTodos,
+          done: null
         });
         this.newTodos= '' //per lasciare lo spazio vuoto appena aggiungi un todo
       }
     },
     checked(i) {
-      this.todos[i].status = !this.todos[i].status;
+      if(this.todos[i].done === null) {
+        this.todos[i].done = "done"
+      } else {
+        this.todos[i].done = null
+      }
     },
     remove(i) {
       this.todos.splice(i, 1) //numero di elementi che voglio eliminare

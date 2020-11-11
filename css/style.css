@@ -173,7 +173,7 @@ ul .delete-btn i:first-child:hover {
     background: #000;
 }
 
-.list li.disabled {
+.done {
     text-decoration: line-through;
   }
 
